@@ -8,11 +8,11 @@
 [4]: https://img.shields.io/github/license/dopos/dcape-app-gomodproxy.svg
 [5]: LICENSE
 
-[athens](https://docs.gomods.io/) application package for [dcape](https://github.com/dopos/dcape).
+[athens](https://github.com/gomods/athens) application package for [dcape](https://github.com/dopos/dcape).
 
 ## Docker image used
 
-* [athens](https://hub.docker.com/gomods/athens/)
+* [athens](https://hub.docker.com/r/gomods/athens)
 
 ## Requirements
 
