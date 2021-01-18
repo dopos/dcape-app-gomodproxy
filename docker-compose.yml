@@ -1,26 +1,12 @@
-version: '2.1'
+# custom app config
+# overrides DCAPE/apps/drone/dcape-app/docker-compose.yml
+
+version: '2'
 
 services:
-
-  athens:
-    image: ${IMAGE}:${IMAGE_VER}
-    restart: always
-    ports:
-      - 3000:3000
-    networks:
-      - lan
-    labels:
-      - "traefik.enable=true"
-      - "traefik.frontend.rule=Host:${APP_SITE}"
-    volumes:
-      - /etc/timezone:/etc/timezone:ro
-      - /etc/localtime:/etc/localtime:ro
-      - ../../data/athens:/data
+  app:
     environment:
       - ATHENS_STORAGE_TYPE=disk
       - ATHENS_DISK_STORAGE_ROOT=/data
-
-networks:
-  lan:
-    external:
-      name: ${DCAPE_NET}
+    volumes:
+      - ${APP_ROOT}/data:/data
