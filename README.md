@@ -23,16 +23,18 @@
 
 ## Usage
 
-* Fork this repo in your Git service
-* Setup deploy hook
-* Run "Test delivery" (config sample will be created in dcape)
-* Edit and save config (enable deploy etc)
-* Run "Test delivery" again (app will be installed and started on webhook host)
+* Gitea: Fork or mirror this repo in your Git service
+* Drone: Activate repo
+* Gitea: "Test delivery", config sample will be saved to enfist
+* Enfist: Edit config and remove .sample from name
+* Gitea: "Test delivery" again (or Drone: "Restart") - app will be installed and started on webhook host
 
-See also: [Deploy setup](https://github.com/dopos/dcape/blob/master/DEPLOY.md) (in Russian)
+## See also
+
+* [Deploy apps with dcape](https://dopos.github.io/dcape/usage/apps/)
 
 ## License
 
 The MIT License (MIT), see [LICENSE](LICENSE).
 
-Copyright (c) 2020 Alexey Kovrizhkin <lekovr+dopos@gmail.com>
+Copyright (c) 2021 Aleksey Kovrizhkin <lekovr+dopos@gmail.com>
