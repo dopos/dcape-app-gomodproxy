@@ -4,6 +4,8 @@
 IMAGE    ?= gomods/athens
 # Hostname for external access
 APP_SITE ?= gomod.dev.lan
+# Keep existing APP_ROOT files
+SETUP_ROOT_OPTS = keep
 
 # ------------------------------------------------------------------------------
 # app custom config
