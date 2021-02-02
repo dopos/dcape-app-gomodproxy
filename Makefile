@@ -4,8 +4,6 @@
 IMAGE    ?= gomods/athens
 # Hostname for external access
 APP_SITE ?= gomod.dev.lan
-# Keep existing APP_ROOT files
-SETUP_ROOT_OPTS = keep
 
 # ------------------------------------------------------------------------------
 # app custom config
@@ -30,7 +28,6 @@ LIB_PATH=$(LIB_PATH)
 #DCAPE_ROOT=$(DCAPE_ROOT)
 
 endef
-
 
 # ------------------------------------------------------------------------------
 # Find and include DCAPE/apps/drone/dcape-app/Makefile
