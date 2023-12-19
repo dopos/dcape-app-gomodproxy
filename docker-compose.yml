@@ -9,4 +9,4 @@ services:
       - ATHENS_STORAGE_TYPE=disk
       - ATHENS_DISK_STORAGE_ROOT=/data
     volumes:
-      - ${DCAPE_ROOT}/${LIB_PATH}:/data
+      - ${DCAPE_VAR}/${LIB_PATH}:/data
