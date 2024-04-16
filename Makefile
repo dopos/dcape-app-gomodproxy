@@ -10,7 +10,7 @@ APP_SITE        ?= gomod.dev.lan
 IMAGE           ?= gomods/athens
 
 #- Docker image tag
-IMAGE_VER       ?= v0.13.0
+IMAGE_VER       ?= v0.13.3
 
 #- Cache storage path
 LIB_PATH        ?= Athens
